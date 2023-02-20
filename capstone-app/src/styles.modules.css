@@ -1,0 +1,29 @@
+.navbar {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+}
+
+.navbar img {
+    padding: ;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.navbar a:hover {
+
+}
+nav ul {
+    height: auto;
+    margin-right: 10px;
+    list-style: none;
+    text-align: left;
+}
+nav li {
+    display: inline-block;
+}
