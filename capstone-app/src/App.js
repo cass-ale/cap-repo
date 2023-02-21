@@ -2,7 +2,6 @@ import './styles.modules.css';
 import './index.css';
 import {Helmet} from "react-helmet";
 import Header from './Components/Header';
-import Nav from './Components/Nav';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
 
@@ -14,7 +13,7 @@ function App() {
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <title>Little Lemon Restaurant</title>
+        <title>The Little Lemon Restaurant</title>
         <meta name="description" content="Official website of the Little Lemon restaurant."/>
         <meta name="author" content="Little Lemon"/>
 
@@ -23,6 +22,8 @@ function App() {
         <meta property="og:url" content="https://www.littlelemon.com"/>
         <meta property="og:description" content="Official website of the Little Lemon restaurant."/>
         <meta property="og:image" content="./Components/Images/Logo.svg"/>
+        <meta property="og:locale" content="en_us" />
+        <meta property="og:site_name" content="Little Lemon" />
 
         <link rel="stylesheet" href="./styles.css" />
     </Helmet>
