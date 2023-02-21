@@ -4,9 +4,9 @@ import React from 'react';
 function Nav() {
     return (
         <>
-        <nav className='navbar'>
-        <ul>
-            <li><a href='#'>Home</a></li>
+        <nav>
+        <ul id='navlink' style={{listStyle: "none"}}>
+            <li><a href='#' className='navbar'>Home</a></li>
             <li><a href='#'>About</a></li>
             <li><a href='#'>Menu</a></li>
             <li><a href='#'>Reservations</a></li>
@@ -17,5 +17,4 @@ function Nav() {
         </>
     )
     }
-    
     export default Nav;

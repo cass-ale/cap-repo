@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Markazi";
+  src: url(./fonts/MarkaziText-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Markazi";
+  src: url(./fonts/MarkaziText-Medium.ttf) format("truetype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Markazi";
+  src: url(./fonts/MarkaziText-Bold.ttf) format("truetype");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "Markazi";
+  src: url(./fonts/MarkaziText-SemiBold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(./fonts/Karla-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Karla";
+  src: url(./fonts/Karla-Medium.ttf) format("truetype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(./fonts/Karla-Light.ttf) format("truetype");
+  font-weight: light;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(./fonts/Karla-SemiBold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(./fonts/Karla-Bold.ttf) format("truetype");
+  font-weight: bolder;
+}

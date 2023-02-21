@@ -1,29 +1,31 @@
 .navbar {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: black;
-    padding: 0.5rem;
+    gap: 5rem;
+    font-family: "Karla";
 }
 
-.navbar img {
-    padding: ;
-}
 .navbar a {
-    color: black;
     text-decoration: none;
-    padding: 5px 10px;
-}
-.navbar a:hover {
-
-}
-nav ul {
-    height: auto;
-    margin-right: 10px;
+    color: #333333;
     list-style: none;
-    text-align: left;
-}
-nav li {
     display: inline-block;
+    padding: 1.5rem;
+    border: 1px solid transparent;
+}
+#navlink a:hover {
+    border: 1px solid #ee9972;
+    border-radius: 25px;
+    background-color: #ee9972;
+    color: #edefee;
+    
+}
+#navlink {
+    display: inline-flex;
+    padding: 5px;
+}
+#navlogo {
+    width: 13rem;
+    height: auto;
 }

@@ -1,4 +1,5 @@
 import './styles.modules.css';
+import './index.css';
 import {Helmet} from "react-helmet";
 import Header from './Components/Header';
 import Nav from './Components/Nav';
@@ -26,7 +27,6 @@ function App() {
         <link rel="stylesheet" href="./styles.css" />
     </Helmet>
     <Header />
-    <Nav />
     <Main />
     <Footer />
     </>
