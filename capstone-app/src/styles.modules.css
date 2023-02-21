@@ -4,8 +4,10 @@
     align-items: center;
     gap: 5rem;
     font-family: "Karla";
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 0.5rem;
 }
-
 .navbar a {
     text-decoration: none;
     color: #333333;
@@ -19,13 +21,40 @@
     border-radius: 25px;
     background-color: #ee9972;
     color: #edefee;
-    
 }
 #navlink {
     display: inline-flex;
     padding: 5px;
+    font-weight: bolder;
 }
 #navlogo {
     width: 13rem;
     height: auto;
+}
+
+.hero {
+    border: 200px solid #495e57;
+    background-color: #495e57;
+}
+h1 {
+    font-family: "Markazi";
+    font-weight: 500;
+    font-size: 64px;
+    color: #f4ce14;
+}
+h2 {
+    font-family: "Markazi";
+    font-size: 40px;
+    color: #edefee
+}
+p {
+    font-family: "Markazi";
+    font-size: 18px;
+    color: #edefee;
+}
+.button {
+    border: 2px solid #f4ce14;
+    background-color: #f4ce14;
+    border-radius: 25px;
+    font-family: "Karla";
 }

@@ -5,8 +5,8 @@ function Nav() {
     return (
         <>
         <nav>
-        <ul id='navlink' style={{listStyle: "none"}}>
-            <li><a href='#' className='navbar'>Home</a></li>
+        <ul id='navlink' style={{listStyle: "none", fontWeight: "bolder"}}>
+            <li><a href='#'>Home</a></li>
             <li><a href='#'>About</a></li>
             <li><a href='#'>Menu</a></li>
             <li><a href='#'>Reservations</a></li>
