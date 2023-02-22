@@ -33,7 +33,7 @@
 }
 
 .hero {
-    border: 200px solid #495e57;
+    border: 10px solid #495e57;
     background-color: #495e57;
 }
 h1 {
@@ -41,20 +41,69 @@ h1 {
     font-weight: 500;
     font-size: 64px;
     color: #f4ce14;
+    grid-column: 2;
 }
 h2 {
     font-family: "Markazi";
     font-size: 40px;
-    color: #edefee
-}
-p {
-    font-family: "Markazi";
-    font-size: 18px;
     color: #edefee;
 }
-.button {
-    border: 2px solid #f4ce14;
-    background-color: #f4ce14;
-    border-radius: 25px;
+p {
     font-family: "Karla";
+    font-size: 17px;
+    color: #edefee;
+    max-width: 65ch;
+    line-height: 1.5;
+}
+.button {
+    border: none;
+    background-color: #f4ce14;
+    border-radius: 16px;
+    font-family: "Karla";
+    font-size: 18px;
+    text-align: center;
+    padding: 18px 75px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ee9972;
+    color: #edefee;
+}
+.imgcontainer {
+    position: relative;
+    top: 2rem;
+    width: 415px;
+    height: 475px;
+    overflow: hidden;
+    border-radius: 16px;
+    grid-row: 1;
+    grid-column: 2;
+}
+.imgcontainer img {
+    width: 415px;
+    height: 628px;
+}
+
+.container {
+    display: grid;
+    position: relative;
+    left: 16rem;
+    align-items: bottom;
+    margin-left: 200px;
+    grid-template-rows: 65px 275px;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 14rem;
+}
+#text {
+    grid-row: 1;
+    grid-column: 1;
+}
+#sub {
+    position: relative;
+    bottom: 3rem;
+}
+#btn {
+    grid-row: 3;
+    grid-column: 1;
+    padding-bottom: 2rem;
 }
