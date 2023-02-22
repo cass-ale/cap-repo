@@ -107,3 +107,68 @@ p {
     grid-column: 1;
     padding-bottom: 2rem;
 }
+
+.main {
+    padding-top: 12rem;
+    position: relative;
+    left: 28rem;
+}
+
+.specials img {
+    width: 290px;
+    height: 195px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+#salad {
+    position: relative;
+}
+.specials button {
+    position: relative;
+    bottom: 40.5rem;
+    left: 45rem;
+}
+.card {
+    display: inline-block;
+    position: relative;
+    right: 15rem;
+    border: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 290px;
+    height: 420px;
+    background-color: #edefee;
+    font: "Karla";
+    color: #333333;
+    gap: 5rem;
+}
+#price {
+    position: relative;
+    bottom: 3.5rem;
+    left: 15rem;
+}
+.card p {
+    position: relative;
+    bottom: 2rem;
+    padding: 2rem;
+    font-family: "Karla";
+    font-size: 12px;
+    max-width: 65ch;
+    line-height: 1.5;
+}
+#dish {
+    width: 29px;
+    height: 20px;
+}
+
+.testimonials img {
+    width: 72px;
+    height: 72px;
+}
+
+
+
+.about img {
+    width: 375px;
+    height: 250px;
+}
