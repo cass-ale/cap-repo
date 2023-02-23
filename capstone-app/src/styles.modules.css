@@ -118,12 +118,13 @@ p {
 }
 
 .main {
-    padding-top: 82rem;
+    /* padding-top: 82rem; */
+    margin-top: 5rem;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
 }
 .main header {
     display: flex;
@@ -265,10 +266,10 @@ text-decoration: underline;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 9rem;
-    padding-bottom: 100rem;
     color: #333333;
     gap: 5rem;
+    margin-bottom: 15rem;
+    margin-right: 10rem;
 }
 .abouttext {
     display: flex;
@@ -307,4 +308,51 @@ text-decoration: underline;
     top: 50%;
     bottom: 50%;
     transform: translate(55%, -50%);
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #333333;
+}
+.footer img {
+    width: 368px;
+    height: 245px;
+    margin: 2rem;
+}
+.footertext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 65%;
+    color: #fbdabb;
+    gap: 4rem;
+    font-family: "Karla";
+    font-size: 18px;
+}
+.footertext p {
+    font-size: 20px;
+    color:#fbdabb;
+}
+.footertext a {
+    color: #fbdabb;
+}
+#li {
+    font-size: 16px;
+}
+#list a {
+    text-decoration: none;
+}
+#list a:hover {
+    text-decoration: underline;
+    color: #edefee;
+}
+#list {
+    list-style: none;
+    text-decoration: none;
 }

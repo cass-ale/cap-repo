@@ -10,14 +10,12 @@ import person4 from "./Images/Person 4.jpg";
 import mario1 from "./Images/Mario and Adrian A.jpg";
 import mario2 from "./Images/Mario and Adrian B.jpg";
 import dish from "./Images/Dish icon.svg";
-import cc from "./Images/creditcard.svg";
 import star from "./Images/Star Icon.jpg";
-
-
 
 function Main() {
     return (
         <>
+        <body>
         <header className='hero'>
             <div className='container'>
                 <div id='text'>
@@ -98,6 +96,7 @@ function Main() {
                 </div>
             </section>
         </main>
+        </body>
         </>
     )
     }

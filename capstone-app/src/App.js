@@ -27,9 +27,11 @@ function App() {
 
         <link rel="stylesheet" href="./styles.css" />
     </Helmet>
+    <main className='content'>
     <Header />
     <Main />
     <Footer />
+    </main>
     </>
   );
 }
