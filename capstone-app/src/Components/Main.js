@@ -24,38 +24,40 @@ function Main() {
             <h1>Little Lemon</h1>
             <h2 id='sub'>Chicago</h2>
             <p id='sub'>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            </div>
-                <a href='/reservations' id='btn'>
+            <a href='/reservations' id='btn'>
                 <button className='button'>
                 Reserve A Table
                 </button>
                 </a>
-                <div className='imgcontainer'>
+            </div>
+            </div>
+            <div className='imgcontainer'>
                 <img src={HeroImage} alt='Chef holding a tray of freshly made bruschetta.' />
                 </div>
-            </div>
         </header>
         <main className='main'>
-            <section className='specials'>
+            <header>
                 <h1 style={{color:"#333333"}}>This Week's Specials!</h1>
                 <a href="/menu"><button className='button'>Online Menu</button></a>
+                </header>
+            <section className='specials'>
                 <div className='card' id='salad'>
                 <img src={salad} alt="Fresh greek salad" />
-                <h3>Greek Salad</h3><h5 id='price'>$12.99</h5>
-                <p style={{color:"#333333"}}>The famous Greek Salad: crispy lettuce, peppers, olives, and our Chicago style feta cheese; garnished with chunky garlic and rosemary croutons</p>
-                <p style={{color:"#333333"}}>Order Now</p><img src={dish} alt="Dish icon" id='dish'/>
+                <div className='cardTitle'><h3>Greek Salad</h3><h5 id='price' style={{color:"#ee9972"}}>$12.99</h5></div>
+                <p style={{color:"#333333"}}>Our famous Greek Salad: crispy lettuce, peppers, olives, and feta cheese; topped with chunky garlic and rosemary croutons.</p>
+                <div className='order'><p style={{color:"#333333"}} id='order'>Order Now</p><img src={dish} alt="Dish icon" id='dish'/></div>
                 </div>
                 <div className='card'>
                 <img src={bruschetta} alt="Fresh and delicious bruschetta" id='brus'/>
-                <h3>Bruschetta</h3><h5 id='price'>$14.99</h5>
+                <div className='cardTitle'><h3>Bruschetta</h3><h5 id='price' style={{color:"#ee9972"}}>$14.99</h5></div>
                 <p style={{color:"#333333"}}>Our bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
-                <p style={{color:"#333333"}}>Order Now</p><img src={dish} alt="Dish icon" id='dish'/>
+                <div className='order'><p style={{color:"#333333"}} id='order'>Order Now</p><img src={dish} alt="Dish icon" id='dish'/></div>
                 </div>
                 <div className='card'>
                 <img src={cake} alt="Sweet and delectable lemon cake" />
-                <h3>Lemon Cake</h3><h5 id='price'>$9.99</h5>
+                <div className='cardTitle'><h3>Lemon Cake</h3><h5 id='price' style={{color:"#ee9972"}}>$9.99</h5></div>
                 <p style={{color:"#333333"}}>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
-                <p style={{color:"#333333"}}>Order Now</p><img src={dish} alt="Dish icon" id='dish'/>
+                <div className='order'><p style={{color:"#333333"}} id='order'>Order Now</p><img src={dish} alt="Dish icon" id='dish'/></div>
                 </div>
 
             </section>

@@ -48,13 +48,22 @@
 .hero {
     border: 10px solid #495e57;
     background-color: #495e57;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    padding-right: 2rem;
 }
 h1 {
     font-family: "Markazi";
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 64px;
     color: #f4ce14;
-    grid-column: 2;
 }
 h2 {
     font-family: "Markazi";
@@ -67,6 +76,15 @@ p {
     color: #edefee;
     max-width: 65ch;
     line-height: 1.5;
+}
+.container p {
+    font-family: "Karla";
+    font-size: 18px;
+    max-width: 65ch;
+    line-height: 1.5;
+}
+.container h1 {
+    height: 10%;
 }
 .button {
     border: none;
@@ -88,96 +106,99 @@ p {
 }
 .imgcontainer {
     position: relative;
-    top: 2rem;
+    top: 75px;
     width: 415px;
     height: 475px;
     overflow: hidden;
     border-radius: 16px;
-    grid-row: 1;
-    grid-column: 2;
 }
 .imgcontainer img {
     width: 415px;
     height: 628px;
 }
 
-.container {
-    display: grid;
-    position: relative;
-    left: 16rem;
-    align-items: bottom;
-    margin-left: 200px;
-    grid-template-rows: 65px 275px;
-    grid-template-columns: 1fr 4fr;
-    grid-column-gap: 14rem;
-}
-#text {
-    grid-row: 1;
-    grid-column: 1;
-}
-#sub {
-    position: relative;
-    bottom: 3rem;
-}
-#btn {
-    grid-row: 3;
-    grid-column: 1;
-    padding-bottom: 2rem;
-}
-
 .main {
-    padding-top: 12rem;
-    position: relative;
-    left: 28rem;
+    padding-top: 7.5rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-
+.main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
 .specials img {
     width: 290px;
     height: 195px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-#salad {
-    position: relative;
-}
-.specials button {
-    position: relative;
-    bottom: 40.5rem;
-    left: 45rem;
-}
 .card {
-    display: inline-block;
-    position: relative;
-    right: 15rem;
+    display: flex;
+    flex-direction: column;
     border: none;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     width: 290px;
     height: 420px;
     background-color: #edefee;
-    font: "Karla";
+    font-family: "Karla";
     color: #333333;
-    gap: 5rem;
+}
+.card:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.cardTitle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
 }
 #price {
-    position: relative;
-    bottom: 3.5rem;
-    left: 15rem;
+    font-size: 14px;
 }
 .card p {
-    position: relative;
-    bottom: 2rem;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
     font-family: "Karla";
-    font-size: 12px;
+    font-size: 14px;
     max-width: 65ch;
     line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 150px;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+#order {
+    font-size: 18px;
+}
+#order:hover{
+cursor: pointer;
+text-decoration: underline;
 }
 #dish {
     width: 29px;
     height: 20px;
 }
-
+.specials {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
 .testimonials img {
     width: 72px;
     height: 72px;
