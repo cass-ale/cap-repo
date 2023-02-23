@@ -62,14 +62,40 @@ function Main() {
 
             </section>
             <section className='testimonials'>
-                <img src={person1} alt='Reviewer' />
-                <img src={person2} alt='Reviewer' />
-                <img src={person3} alt='Reviewer' />
-                <img src={person4} alt='Reviewer' />
+                <h1 style={{color:"#333333"}}>Testimonials</h1>
+                <div className='testimcontainer'>
+                    <div className='testim'>
+                        <div className='rate'><p>Rating</p><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /></div>
+                <div className='reviewer'><img src={person1} alt='Reviewer' /><p id='reviewer'>Francis B.</p></div>
+                <p>"Always room for desert!"</p>
+                    </div>
+                    <div className='testim'>
+                        <div className='rate'><p>Rating</p><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /></div>
+                <div className='reviewer'><img src={person2} alt='Reviewer' /><p id='reviewer'>Terri F.</p></div>
+                    <p>"Amazing!"</p>
+                    </div>
+                    <div className='testim'>
+                        <div className='rate'><p>Rating</p><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /></div>
+                <div className='reviewer'><img src={person3} alt='Reviewer' /><p id='reviewer'>Amber H.</p></div>
+                <p>“Mario and Adrian know how to make diners feel welcomed!”</p>
+                    </div>
+                    <div className='testim'>
+                        <div className='rate'><p>Rating</p><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /><img src={star} alt='star icon' /></div>
+               <div className='reviewer'><img src={person4} alt='Reviewer' /><p id='reviewer'>Leon Q.</p></div>
+               <p>"Loved the Greek Salad!"</p>
+                    </div>
+                </div>
             </section>
             <section className='about'>
+                <div className='abouttext'>
+                    <h1>Little Lemon</h1>
+                    <h2>Chicago</h2>
+                    <p>Founded in 2013, Little Lemon's cuisine aims to capture the simplicity and joy of Mediterranean dining. Executive Chefs Mario Lennox and Adrian Moore were both born and raised in Chicago, and their stellar attention to detail ensures that every visit feels as magical as the first. Here at Little Lemon, you'll be welcomed in as family. We know you'll enjoy your meal at your soon-to-be favorite restaurant!</p>
+                </div>
+                <div className='abtimg'>
                 <img src={mario1} alt="Head Chefs Mario and Adrian" />
                 <img src={mario2} alt="Head Chefs Mario and Adrian" />
+                </div>
             </section>
         </main>
         </>

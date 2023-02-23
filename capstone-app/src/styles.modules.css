@@ -46,7 +46,7 @@
 }
 
 .hero {
-    border: 10px solid #495e57;
+    width: 100%;
     background-color: #495e57;
     display: flex;
     flex-direction: row;
@@ -118,7 +118,7 @@ p {
 }
 
 .main {
-    padding-top: 7.5rem;
+    padding-top: 82rem;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +129,9 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+}
+.main a {
+    padding-left: 15rem;
 }
 .specials img {
     width: 290px;
@@ -198,15 +200,111 @@ text-decoration: underline;
     display: flex;
     justify-content: flex-start;
     gap: 3rem;
+    padding-bottom: 6rem;
+}
+
+
+.testimonials {
+    background-color: #fbdabb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .testimonials img {
     width: 72px;
     height: 72px;
 }
+.testimcontainer {
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 6rem;
+}
+.testim {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 200px;
+    height: 200px;
+    background-color: #333333;
+    font-family: "Karla";
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.testim p{
+    margin-left: 5%;
+    font-size: 12px;
+}
+.rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5%;
+}
+.rate p {
+    font-size: 14px;
+}
+.rate img {
+    width: 20px;
+    height: 20px;
+}
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.reviewer p {
+    font-size: 14px;
+}
 
 
-
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 9rem;
+    padding-bottom: 100rem;
+    color: #333333;
+    gap: 5rem;
+}
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    color: #333333;
+}
+.abouttext h1 {
+    color: #333333;
+    height: 2px;
+}
+.abouttext h2 {
+    color: #333333;
+    font-size: 40px;
+}
+.abouttext p {
+    color: #333333;
+}
 .about img {
     width: 375px;
     height: 250px;
+}
+.abtimg {
+    display: flex;
+    position: relative;
+}
+.abtimg img {
+    position: absolute;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.abtimg img:first-child {
+    z-index: 2;
+}
+.abtimg img:last-child {
+    z-index: 1;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(55%, -50%);
 }
