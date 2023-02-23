@@ -38,7 +38,7 @@ function Main() {
         <main className='main'>
             <section className='specials'>
                 <h1 style={{color:"#333333"}}>This Week's Specials!</h1>
-                <button className='button'>Online Menu</button>
+                <a href="/menu"><button className='button'>Online Menu</button></a>
                 <div className='card' id='salad'>
                 <img src={salad} alt="Fresh greek salad" />
                 <h3>Greek Salad</h3><h5 id='price'>$12.99</h5>

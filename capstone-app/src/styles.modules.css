@@ -15,13 +15,26 @@
     display: inline-block;
     padding: 1.5rem;
     border: 1px solid transparent;
+    position: relative;
 }
 #navlink a:hover {
-    border: 1px solid #ee9972;
-    border-radius: 25px;
-    background-color: #ee9972;
-    color: #edefee;
+    color: #ee9972;
 }
+#navlink a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: #ee9972;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+    transform-origin: bottom;
+  }
+ #navlink a:hover::after {
+    transform: scaleX(1);
+  }
 #navlink {
     display: inline-flex;
     padding: 5px;
@@ -64,10 +77,14 @@ p {
     text-align: center;
     padding: 18px 75px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 .button:hover {
     background-color: #ee9972;
     color: #edefee;
+}
+.button:active {
+    transform: scale(0.95);
 }
 .imgcontainer {
     position: relative;
