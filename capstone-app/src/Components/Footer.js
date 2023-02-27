@@ -1,5 +1,6 @@
 import React from 'react';
 import RestaurantImg from "./Images/restaurant.jpg";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -11,12 +12,12 @@ function Footer() {
         <div className="footernav" >
         <ul id='list'>
             <p>NAVIGATION</p>
-            <li id="li"><a href='/'>Home</a></li>
-            <li id="li"><a href='/about'>About</a></li>
-            <li id="li"><a href='/menu'>Menu</a></li>
-            <li id="li"><a href='/reservations'>Reservations</a></li>
-            <li id="li"><a href='/delivery'>Order Online</a></li>
-            <li id="li"><a href='/login'>Login</a></li>
+            <li id="li"><Link to='/'>Home</Link></li>
+            <li id="li"><Link to='/about'>About</Link></li>
+            <li id="li"><Link to='/menu'>Menu</Link></li>
+            <li id="li"><Link to='/reservations'>Reservations</Link></li>
+            <li id="li"><Link to='/delivery'>Order Online</Link></li>
+            <li id="li"><Link to='/login'>Login</Link></li>
         </ul>
         </div>
         <div className='footercontact'>
@@ -25,16 +26,16 @@ function Footer() {
             <li id="li">123 Hacker Way,<br/>
             Chicago, IL 60607</li>
             <li id="li">(888) 123-4567</li>
-            <li id="li"><a href="mail.google.com">info@littlelemon.com</a></li>
+            <li id="li"><Link to="mail.google.com">info@littlelemon.com</Link></li>
         </ul>
         </div>
         <div className='footersocials'>
         <ul id='list'>
             <p>SOCIALS</p>
-            <li id="li"><a href="http://www.facebook.com/littlelemon">Facebook</a></li>
-            <li id="li"><a href="http://www.twitter.com/littlelemon">Twitter</a></li>
-            <li id="li"><a href="http://www.instagram.com/littlelemon">Instagram</a></li>
-            <li id="li"><a href="http://www.youtube.com/littlelemon">YouTube</a></li>
+            <li id="li"><Link to="http://www.facebook.com/littlelemon">Facebook</Link></li>
+            <li id="li"><Link to="http://www.twitter.com/littlelemon">Twitter</Link></li>
+            <li id="li"><Link to="http://www.instagram.com/littlelemon">Instagram</Link></li>
+            <li id="li"><Link to="http://www.youtube.com/littlelemon">YouTube</Link></li>
         </ul>
         </div>
         </div>

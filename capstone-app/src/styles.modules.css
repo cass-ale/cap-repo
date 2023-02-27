@@ -399,3 +399,27 @@ text-decoration: underline;
         align-items: center;
     }
 }
+
+.resheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resheader h1 {
+    color: #333333;
+    font-family: "Markazi";
+}
+.resheader p {
+    color: #333333;
+    font-family: "Karla";
+}
+.resimg {
+    width: 854px;
+    height: 500px;
+    overflow: hidden;
+}
+.resimg img {
+    width: 100%;
+    height: auto;
+}
