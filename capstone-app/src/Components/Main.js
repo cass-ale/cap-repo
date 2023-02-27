@@ -5,7 +5,6 @@ import Testimonials from './Testimonials';
 import About from './About';
 
 
-
 function Main() {
     return (
         <body>
@@ -17,6 +16,5 @@ function Main() {
         </main>
         </body>
     )
-    }
-    
+    }    
     export default Main;

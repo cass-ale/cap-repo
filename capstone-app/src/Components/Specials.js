@@ -3,13 +3,14 @@ import bruschetta from "./Images/bruchetta.svg";
 import salad from "./Images/greek salad.jpg";
 import cake from "./Images/lemon dessert.jpg";
 import dish from "./Images/Dish icon.svg";
+import { Link } from 'react-router-dom';
 
 function Specials() {
     return (
         <>
         <header>
                 <h1 style={{color:"#333333"}}>This Week's Specials!</h1>
-                <a href="/menu"><button className='button'>Online Menu</button></a>
+                <Link to="/menu"><button className='button'>Online Menu</button></Link>
                 </header>
             <section className='specials'>
                 <div className='card' id='salad'>

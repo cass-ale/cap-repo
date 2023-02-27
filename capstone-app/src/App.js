@@ -1,9 +1,9 @@
 import './styles.modules.css';
 import './index.css';
 import {Helmet} from "react-helmet";
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Footer from './Components/Footer';
+import Home from './Home';
+import Reservations from './Components/Reservations';
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -25,13 +25,12 @@ function App() {
         <meta property="og:locale" content="en_us" />
         <meta property="og:site_name" content="Little Lemon" />
 
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styles.modules.css" />
     </Helmet>
-    <main className='content'>
-    <Header />
-    <Main />
-    <Footer />
-    </main>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/reservations" element={<Reservations />} />
+    </Routes>
     </>
   );
 }

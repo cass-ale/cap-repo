@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "./Images/Logo.svg";
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
 function Header() {
@@ -31,9 +32,9 @@ function Header() {
 return (
     <>
     <header className='navbar'>
-            <a href='/'>
+            <Link to='/'>
              <img src={Logo} alt="Little Lemon logo" id="navlogo" />
-            </a>
+            </Link>
             <Nav />
     </header>
     </>
