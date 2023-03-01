@@ -1,40 +1,12 @@
-import React, {useState} from "react";
+import React, { useReducer, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import chef from "./Images/restaurant chef B.jpg";
-import BookingForm from "./BookingForm";
+import Booking from "./Booking"
 
 
 
 function Reservations() {
-    const [availableTimes, setAvailableTimes] = useState([
-        "17:00",
-        "17:30",
-        "18:00",
-        "18:30",
-        "19:00",
-        "19:30",
-        "20:00",
-        "20:30",
-        "21:00",
-        "21:30",
-        "22:00",
-    ])
-    const initialState = {
-        availableTimes: [
-            "17:00",
-            "17:30",
-            "18:00",
-            "18:30",
-            "19:00",
-            "19:30",
-            "20:00",
-            "20:30",
-            "21:00",
-            "21:30",
-            "22:00",
-        ]
-    }
     return(
         <>
         <header>
@@ -49,7 +21,7 @@ function Reservations() {
                     <h2 style={{color:"#333333"}}>Tell Us A Little More About You!</h2>
             </header>
             <body>
-                <BookingForm />
+                <Booking />
             </body>
         </main>
         <footer>
