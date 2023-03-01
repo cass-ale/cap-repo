@@ -423,3 +423,37 @@ text-decoration: underline;
     width: 100%;
     height: auto;
 }
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495e57;
+    border: 1px solid #333333;
+    border-radius: 16px;
+    width: 854px;
+    margin-left: 30rem;
+    margin-bottom: 5rem;
+    padding: 2.5rem;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    gap: 10px;
+    color: #edefee;
+    font-family: "Karla";
+    font-size: 24px;
+}
+.form label {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 10px;
+}
+.form input, select {
+    flex: 1;
+    font-family: 'Karla';
+}

@@ -1,50 +1,11 @@
-import React, { useReducer, useState } from 'react';
+import React, { useState } from 'react';
 
-const initialState = {
-  items: ["17:00",
-          "17:30",
-          "18:00",
-          "18:30",
-          "19:00",
-          "19:30",
-          "20:00",
-        ],
-  selectedItem: '',
-}
-const initializeState = () => {
-    return {
-        items: [
-            "17:00",
-            "17:30",
-            "18:00",
-            "18:30",
-            "19:00",
-            "19:30",
-            "20:00",
-        ],
-        selectedItem: '',
-}}
 
-const reducer = (state, action) => {
-  switch (action.type) {
-    case 'REMOVE_ITEM':
-      const newItems = state.items.filter(item => item !== action.payload);
-      return { ...state, items: newItems };
-    case 'SELECT_ITEM':
-      return { ...state, selectedItem: action.payload };
-      case 'NEW_DATE':
-        return initializeState();
-    default:
-      return state;
-  }
-}
-
-const Booking = () => {
+function Booking({state, dispatch}) {
   const [name, setName] = useState("")
   const [date, setDate] = useState("")
   const [guests, setGuests] = useState("")
-  const [occasion, setOccasion] = useState("None")
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [occasion, setOccasion] = useState("None");
   const [inputValue, setInputValue] = useState('');
 
   const handleFormSubmit = (event) => {
@@ -52,8 +13,9 @@ const Booking = () => {
     dispatch({ type: 'REMOVE_ITEM', payload: state.selectedItem });
     setInputValue('');
     clearForm();
+    alert("Thank you for booking with us! We look forward to having you.")
   }
-  const clearForm = (e) => {
+  const clearForm = () => {
     setName("");
     setGuests("");
     setOccasion("None");
@@ -67,31 +29,33 @@ const Booking = () => {
   }
 
   return (
-    <div>
+    <div className='formContainer'>
+      <div className='form'>
       <form onSubmit={handleFormSubmit}>
-              <label htmlFor='name'>Name</label>
-                <input
+              <label htmlFor='name'>Name
+              <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 id="name"
                 placeholder='Name'
                 type="text"
-                name="name" />
-            <label htmlFor="res-date">Choose Date</label>
-                <input
+                name="name" /></label>
+            <label htmlFor="res-date">Date
+            <input
                 value={date}
                 onChange={handleDateChange}
                 name='date'
                 type="date"
-                id="res-date" />
-          <label>
-          Choose Time
-          <select value={state.selectedItem} onChange={handleDropdownChange}>
+                id="res-date" /></label>
+            <label>
+            Time
+              <select value={state.selectedItem} onChange={handleDropdownChange}>
+                <option>Time</option>
             {state.items.map(item => <option key={item} value={item}>{item}</option>)}
-          </select>
-        </label>
-        <label htmlFor="guests">Number of Guests</label>
-                <input
+              </select>
+            </label>
+            <label htmlFor="guests">Party Size
+            <input
                 value={guests}
                 onChange={(e) => setGuests(e.target.value)}
                 type="number"
@@ -99,9 +63,9 @@ const Booking = () => {
                 min="1"
                 max="10"
                 name='guests'
-                id="guests" />
-            <label htmlFor="occasion">Occasion</label>
-                <select
+                id="guests" /></label>
+            <label htmlFor="occasion">Occasion
+            <select
                 value={occasion}
                 onChange={(e) => setOccasion(e.target.value)}
                 name='occasion'
@@ -109,9 +73,10 @@ const Booking = () => {
                     <option>None</option>
                     <option>Birthday</option>
                     <option>Anniversary</option>
-                </select>
-        <button type="submit">Make Your Reservation</button>
+                </select></label>
+            <button className='button' type="submit">Make Your Reservation</button>
       </form>
+      </div>
     </div>
   );
 }
