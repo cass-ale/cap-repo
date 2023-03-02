@@ -51,7 +51,7 @@ function Reservations() {
         </header>
         <main className="reservations">
             <header className="resheader">
-                <h1>Plan Your Next Meal With Us!</h1>
+                <h1 data-testid="heading">Plan Your Next Meal With Us!</h1>
                 <p>Enter your name, party size, and contact information and select an available time slot below.</p>
                     <div className="resimg"><img src={chef} alt="A Little Lemon chef expertly preparing food." /></div>
                     <h2 style={{color:"#333333"}}>Tell Us A Little More About You!</h2>

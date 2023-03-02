@@ -46,10 +46,11 @@ function Booking({state, dispatch}) {
                 onChange={handleDateChange}
                 name='date'
                 type="date"
-                id="res-date" /></label>
+                id="res-date"
+                data-testid="date" /></label>
             <label>
             Time
-              <select value={state.selectedItem} onChange={handleDropdownChange}>
+              <select value={state.selectedItem} onChange={handleDropdownChange} data-testid="time">
                 <option>Time</option>
             {state.items.map(item => <option key={item} value={item}>{item}</option>)}
               </select>
@@ -74,7 +75,7 @@ function Booking({state, dispatch}) {
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select></label>
-            <button className='button' type="submit">Make Your Reservation</button>
+            <button className='button' type="submit" data-testid="submit">Make Your Reservation</button>
       </form>
       </div>
     </div>
