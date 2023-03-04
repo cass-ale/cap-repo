@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
-function Booking({state, dispatch}) {
+function Booking({state, dispatch, useEffect}) {
   const [name, setName] = useState("")
   const [date, setDate] = useState("")
   const [guests, setGuests] = useState("")
@@ -13,7 +13,6 @@ function Booking({state, dispatch}) {
     dispatch({ type: 'REMOVE_ITEM', payload: state.selectedItem });
     setInputValue('');
     clearForm();
-    alert("Thank you for booking with us! We look forward to having you.")
   }
   const clearForm = () => {
     setName("");
