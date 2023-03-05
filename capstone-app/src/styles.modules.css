@@ -457,3 +457,6 @@ text-decoration: underline;
     flex: 1;
     font-family: 'Karla';
 }
+.form input:focus:invalid {
+    border-color: #ff0000;
+}
